@@ -1,0 +1,13 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="">
+        <file>PennSim.jar</file>
+        <file alias="default_test.pm">scripts/default_test.pm</file>
+        <file alias="assembly_test.pm">scripts/assembly_test.pm</file>
+        <file alias="lc3os.obj">os/lc3os.obj</file>
+        <file alias="lc3os.sym">os/lc3os.sym</file>
+        <file alias="p2os.obj">os/p2os.obj</file>
+        <file alias="p2os.sym">os/p2os.sym</file>
+        <file alias="p3os.obj">os/p3os.obj</file>
+        <file alias="p3os.sym">os/p3os.sym</file>
+    </qresource>
+</RCC>

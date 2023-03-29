@@ -1,0 +1,2 @@
+as {asm}
+quit
