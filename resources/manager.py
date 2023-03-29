@@ -1,7 +1,7 @@
-from PySide2.QtCore import QFile, QFileInfo, QTextStream, QTemporaryDir, QTemporaryFile
-
+from PySide2.QtCore import QByteArray, QFile, QFileInfo, QTextStream, QTemporaryDir, QTemporaryFile
 from resources.available import Resources
 
+import base64
 
 class ResourceManager:
     """
@@ -75,7 +75,9 @@ class ResourceManager:
         if not temporary.open():
             raise Exception('Unable to create temporary file')
 
-        temporary.write(contents)
+        temp = QByteArray.fromBase64(base64.b64encode(contents.encode()))
+
+        temporary.write(temp)
         temporary.close()
 
         return QFileInfo(temporary)
